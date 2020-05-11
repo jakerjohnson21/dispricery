@@ -1,0 +1,18 @@
+.list-item-container {
+    border: 1px solid lightgray;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 9vh;
+    border-radius: 5px;
+}

@@ -3,19 +3,24 @@ import Navigation from './Navigation';
 import { withRouter } from 'react-router-dom';
 import Routes from '../config/routes';
 import UserModel from '../models/user';
+import '../styles/app.css'
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentUser: localStorage.getItem('uid'),
+            currentUserID: localStorage.getItem('uid'),
+            currentUserName: null,
             dbId: "1"
         }
     }
 
-    setCurrentUser = (userId) => {
+    setCurrentUser = (userId, userName) => {
+
+        console.log('setCurrentUser called, ' + userName)
         this.setState({
-            currentUser: userId
+            currentUserID: userId,
+            currentUserName: userName
         })
 
         localStorage.setItem('uid', userId)
@@ -28,7 +33,8 @@ class App extends Component {
             .then(res => {
                 console.log(res)
                 this.setState({
-                    currentUser: null,
+                    currentUserID: null,
+                    currentUserName: null,
                     dbId: ""
                 })
                 this.props.history.push('/')
@@ -39,12 +45,12 @@ class App extends Component {
 
     render() {
         return (
-            <>
-                <Navigation setCurrentUser={this.setCurrentUser} currentUser={this.state.currentUser} logout={this.logout}/>
+            <div className='main-section'>
+                <Navigation setCurrentUser={this.setCurrentUser} currentUserID={this.state.currentUserID} currentUserName={this.state.currentUserName} logout={this.logout}/>
                 <div>
-                    <Routes />
+                    <Routes currentUserId={this.state.currentUserID}/>
                 </div>
-            </>
+            </div>
         );
     }
 }

@@ -1,0 +1,60 @@
+.store-compare {
+}
+
+.store-cards-container {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.store-card {
+    height: 75vh;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.card-top-section {
+    height: 30%;
+}
+
+.card-middle-section {
+height: 60%;
+padding-top: 1rem;
+padding-left: 1rem;
+overflow-y: scroll;
+}
+
+.card-bottom-section {
+    height: 10%;
+}
+
+.card-store-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.card-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-tab-container {
+    width: 30.5vw;
+    height: 38vh;
+    border: 1px solid rgb(228, 228, 228);
+    overflow-y: scroll;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 12vh;
+    
+}

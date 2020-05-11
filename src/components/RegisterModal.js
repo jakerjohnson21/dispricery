@@ -22,7 +22,7 @@ class RegisterModal extends Component {
             .then(res => {
                 console.log('res: ')
                 console.log(res);
-                this.props.setCurrentUser(res.data.userId)
+                this.props.setCurrentUser(res.data.userId, res.data.userName)
             })
             .catch(err => console.log(err))
     }
