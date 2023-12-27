@@ -1,10 +1,8 @@
 # Dispricery
 
-After the legalization of recreational merijuana, dispensaries popped up on every block in some cities. Since every dispensary has their own custom deals and menu prices, I decided to create Dispricery, a tool to help users find the best prices/deals in their area. 
+Dispricery, a website to help users find the best prices and deals that dispensaries are advertising in the local area. 
 
 ## Getting Started
-
-You can view the site here: https://young-forest-11788.herokuapp.com/
 
 In order to begin, first create an account or log in. Then you are able to view two stores at once allowing you to quickly compare them. If you like a store you can add it to your favorites, if you don't like one you can always swap it out. 
 
@@ -26,6 +24,7 @@ In order to begin, first create an account or log in. Then you are able to view 
 * User is presented two stores at once
 * For either store, user can view descriptions which have daily deals / specials, or see a list of some of the popular menu items
 * For either store, user can choose to add it to favorites or refresh to get a new store.
+
 ##### Profile Page
 * User can see basic profile information
 * User can see a list of the stores they have favorited
